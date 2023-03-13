@@ -1,4 +1,4 @@
-import { logoutService } from "../services/logOutService.js";
+import { logoutService } from "../services/logoutService.js";
 export const handleLogout = async (req, res) => {
   console.log("handleLogout initiated");
   const refreshToken = req.cookies.jwt;
