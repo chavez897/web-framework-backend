@@ -2,7 +2,7 @@ import express from "express";
 import { loginUser } from "../../controllers/authController.js";
 import { registerUser } from "../../controllers/registerUserController.js";
 import { refreshToken } from "../../controllers/refreshTokenController.js";
-import { handleLogout } from "../../controllers/logOutController.js";
+import { handleLogout } from "../../controllers/logoutController.js";
 
 const router = express.Router();
 
