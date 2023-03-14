@@ -29,7 +29,7 @@ export const handleLoginService = async (email, password) => {
     },
     process.env.ACCESS_TOKEN_SECRET,
     {
-      expiresIn: process.env.ACCESS_TOKEN_LIFE,
+      expiresIn: 900,
     }
   );
   //Generate refresh token
@@ -37,7 +37,7 @@ export const handleLoginService = async (email, password) => {
     { email: userExists.email },
     process.env.REFRESH_TOKEN_SECRET,
     {
-      expiresIn: process.env.REFRESH_TOKEN_LIFE,
+      expiresIn: 86400,
     }
   );
   //Add refresh token to user document
