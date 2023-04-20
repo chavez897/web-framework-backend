@@ -1,4 +1,5 @@
 const allowedOrigins = [
+  "*",
   "https://wisepal-tutor-finder.netlify.app",
   "https://wisepal-angular.vercel.app/",
   //Client dev server
